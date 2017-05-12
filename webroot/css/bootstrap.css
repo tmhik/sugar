@@ -1,0 +1,8 @@
+.col-xs-3 {
+  width: 600px;
+  margin: auto;
+}
+
+td.actions a {
+  padding-right: 15px;
+}

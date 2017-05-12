@@ -1,0 +1,180 @@
+<?php
+namespace App\Test\Fixture;
+
+use Cake\TestSuite\Fixture\TestFixture;
+
+/**
+ * MFoodNutrientAmountsFixture
+ *
+ */
+class MFoodNutrientAmountsFixture extends TestFixture
+{
+
+    /**
+     * Fields
+     *
+     * @var array
+     */
+    // @codingStandardsIgnoreStart
+    public $fields = [
+        'foodId' => ['type' => 'string', 'fixed' => true, 'length' => 10, 'null' => false, 'default' => '', 'collate' => 'utf8_general_ci', 'comment' => '食材ID', 'precision' => null],
+        'Refuse' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '廃 棄 率'],
+        'EnercKcal' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'エネルギー（kcal）'],
+        'Enerc' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'エネルギー（kJ)'],
+        'Water' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '水   分'],
+        'Protein' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'たんぱく質'],
+        'Protcaa' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'アミノ酸組成によるたんぱく質'],
+        'Fat' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '脂   質'],
+        'Fatnlea' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'トリアシルグリセロール当量'],
+        'Fasat' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '飽和脂肪酸'],
+        'Fams' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '一価不飽和脂肪酸'],
+        'Fapu' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '多価不飽和脂肪酸'],
+        'Chole' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'コレステロール'],
+        'Carbohyd' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '炭水化物'],
+        'Choavlm' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '利用可能炭水化物（単糖当量）'],
+        'Fibsol' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '水溶性食物繊維'],
+        'Fibins' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '不溶性食物繊維'],
+        'Fibtg' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '食物繊維総量'],
+        'Ash' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '灰   分'],
+        'MineralNa' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ナトリウム'],
+        'MineralK' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'カリウム'],
+        'MineralCa' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'カルシウム'],
+        'MineralMg' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'マグネシウム'],
+        'MineralP' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'リン'],
+        'MineralFe' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '鉄'],
+        'MineralZn' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '亜鉛'],
+        'MineralCu' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '銅'],
+        'MineralMn' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'マンガン'],
+        'MineralId' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ヨウ素'],
+        'MineralSe' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'セレン'],
+        'MineralCr' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'クロム'],
+        'MineralMo' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'モリブデン'],
+        'Retol' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'レチノール'],
+        'Carta' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'α-カロテン'],
+        'Cartb' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'β-カロテン'],
+        'Crypxb' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'β-クリプトキサンチン'],
+        'Cartbeq' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'β-カロテン当量'],
+        'VitaRae' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'レチノール活性当量'],
+        'Vitd' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンD'],
+        'Tocpha' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'α-トコフェロール'],
+        'Tocphb' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'β-トコフェロール'],
+        'Tocphg' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'γ-トコフェロール'],
+        'Tocphd' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'δ-トコフェロール'],
+        'Vitk' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンK'],
+        'Thiahcl' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンB1'],
+        'Ribf' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンB2'],
+        'Nia' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ナイアシン'],
+        'Vitb6A' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンB6'],
+        'Vitb12' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンB12'],
+        'Fol' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '葉酸'],
+        'Pantac' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'パントテン酸'],
+        'Biot' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビオチン'],
+        'Vitc' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ビタミンC'],
+        'NaclEq' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '食塩相当量'],
+        'Alc' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'アルコール'],
+        'Nitra' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '硝酸イオン'],
+        'Thebrn' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'テオブロミン'],
+        'Caffn' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'カフェイン'],
+        'Tan' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'タンニン'],
+        'Polyphent' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'ポリフェノール'],
+        'Aceac' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '酢酸'],
+        'Oil' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '調理油'],
+        'Oa' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '有機酸'],
+        'Fapun3' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'n-3系多価不飽和脂肪酸'],
+        'Fapun6' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => 'n-6系多価不飽和脂肪酸'],
+        'WeightRate' => ['type' => 'float', 'length' => 0, 'precision' => 0, 'unsigned' => true, 'null' => true, 'default' => null, 'comment' => '重量変化率'],
+        'registDate' => ['type' => 'timestamp', 'length' => null, 'null' => false, 'default' => 'CURRENT_TIMESTAMP', 'comment' => '作成日時', 'precision' => null],
+        'registUserId' => ['type' => 'string', 'length' => 10, 'null' => true, 'default' => '', 'collate' => 'utf8_general_ci', 'comment' => '作成者ID', 'precision' => null, 'fixed' => null],
+        'updateDate' => ['type' => 'timestamp', 'length' => null, 'null' => false, 'default' => 'CURRENT_TIMESTAMP', 'comment' => '更新日時', 'precision' => null],
+        'updateUserId' => ['type' => 'string', 'length' => 10, 'null' => true, 'default' => '', 'collate' => 'utf8_general_ci', 'comment' => '更新者ID', 'precision' => null, 'fixed' => null],
+        '_constraints' => [
+            'primary' => ['type' => 'primary', 'columns' => ['foodId'], 'length' => []],
+            'm_food_nutrient_amounts_ibfk_1' => ['type' => 'foreign', 'columns' => ['foodId'], 'references' => ['m_foods', 'foodId'], 'update' => 'restrict', 'delete' => 'restrict', 'length' => []],
+        ],
+        '_options' => [
+            'engine' => 'InnoDB',
+            'collation' => 'utf8_general_ci'
+        ],
+    ];
+    // @codingStandardsIgnoreEnd
+
+    /**
+     * Records
+     *
+     * @var array
+     */
+    public $records = [
+        [
+            'foodId' => '5de6f3ce-9e1d-49e3-9480-d96e91bad0a3',
+            'Refuse' => 1,
+            'EnercKcal' => 1,
+            'Enerc' => 1,
+            'Water' => 1,
+            'Protein' => 1,
+            'Protcaa' => 1,
+            'Fat' => 1,
+            'Fatnlea' => 1,
+            'Fasat' => 1,
+            'Fams' => 1,
+            'Fapu' => 1,
+            'Chole' => 1,
+            'Carbohyd' => 1,
+            'Choavlm' => 1,
+            'Fibsol' => 1,
+            'Fibins' => 1,
+            'Fibtg' => 1,
+            'Ash' => 1,
+            'MineralNa' => 1,
+            'MineralK' => 1,
+            'MineralCa' => 1,
+            'MineralMg' => 1,
+            'MineralP' => 1,
+            'MineralFe' => 1,
+            'MineralZn' => 1,
+            'MineralCu' => 1,
+            'MineralMn' => 1,
+            'MineralId' => 1,
+            'MineralSe' => 1,
+            'MineralCr' => 1,
+            'MineralMo' => 1,
+            'Retol' => 1,
+            'Carta' => 1,
+            'Cartb' => 1,
+            'Crypxb' => 1,
+            'Cartbeq' => 1,
+            'VitaRae' => 1,
+            'Vitd' => 1,
+            'Tocpha' => 1,
+            'Tocphb' => 1,
+            'Tocphg' => 1,
+            'Tocphd' => 1,
+            'Vitk' => 1,
+            'Thiahcl' => 1,
+            'Ribf' => 1,
+            'Nia' => 1,
+            'Vitb6A' => 1,
+            'Vitb12' => 1,
+            'Fol' => 1,
+            'Pantac' => 1,
+            'Biot' => 1,
+            'Vitc' => 1,
+            'NaclEq' => 1,
+            'Alc' => 1,
+            'Nitra' => 1,
+            'Thebrn' => 1,
+            'Caffn' => 1,
+            'Tan' => 1,
+            'Polyphent' => 1,
+            'Aceac' => 1,
+            'Oil' => 1,
+            'Oa' => 1,
+            'Fapun3' => 1,
+            'Fapun6' => 1,
+            'WeightRate' => 1,
+            'registDate' => 1493703642,
+            'registUserId' => 'Lorem ip',
+            'updateDate' => 1493703642,
+            'updateUserId' => 'Lorem ip'
+        ],
+    ];
+}

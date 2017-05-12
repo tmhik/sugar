@@ -1,0 +1,378 @@
+2017-05-11 06:42:48 Error: [InvalidArgumentException] Users is not associated with Bookmarks
+Request URL: /users/view/3
+Referer URL: http://localhost:8888/cake3/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(257): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\UsersTable), 'Bookmarks', Array, Array)
+#1 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(382): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\UsersTable))
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(353): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\UsersTable))
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(984): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\UsersTable), true)
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(935): Cake\ORM\Query->_transformQuery()
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(136): Cake\ORM\Query->sql()
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(221): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Query.php(190): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(957): Cake\Database\Query->execute()
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(905): Cake\ORM\Query->_all()
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(404): Cake\ORM\Query->all()
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(415): Cake\ORM\Query->first()
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Table.php(1224): Cake\ORM\Query->firstOrFail()
+#15 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(77): Cake\ORM\Table->get('3', Array)
+#16 [internal function]: App\Controller\UsersController->view('3')
+#17 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#19 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#22 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#23 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#24 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#26 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#27 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#28 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#29 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#31 {main}
+
+
+2017-05-11 06:47:51 Error: [Cake\Core\Exception\Exception] App\Controller\BoardsController does not implement an isAuthorized() method.
+Request URL: /boards
+Referer URL: http://localhost:8888/cake3/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Auth/ControllerAuthorize.php(58): Cake\Auth\ControllerAuthorize->controller(Object(App\Controller\BoardsController))
+#1 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(547): Cake\Auth\ControllerAuthorize->__construct(Object(Cake\Controller\ComponentRegistry), Array)
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(501): Cake\Controller\Component\AuthComponent->constructAuthorize()
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(309): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php(260): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Event/EventManager.php(422): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Event/EventManager.php(391): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(501): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(116): Cake\Controller\Controller->startupProcess()
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BoardsController))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#15 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#17 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#18 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#19 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#20 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#21 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#22 {main}
+
+
+2017-05-11 06:48:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /login/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(72): Cake\Http\ControllerFactory->missingController(Object(Cake\Network\Request))
+#1 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(92): Cake\Http\ControllerFactory->create(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-05-11 06:50:39 Error: [InvalidArgumentException] Users is not associated with Bookmarks
+Request URL: /users/view/3
+Referer URL: http://localhost:8888/cake3/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(257): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\UsersTable), 'Bookmarks', Array, Array)
+#1 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(382): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\UsersTable))
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(353): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\UsersTable))
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(984): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\UsersTable), true)
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(935): Cake\ORM\Query->_transformQuery()
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(136): Cake\ORM\Query->sql()
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(221): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Query.php(190): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(957): Cake\Database\Query->execute()
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(905): Cake\ORM\Query->_all()
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(404): Cake\ORM\Query->all()
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(415): Cake\ORM\Query->first()
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Table.php(1224): Cake\ORM\Query->firstOrFail()
+#15 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(77): Cake\ORM\Table->get('3', Array)
+#16 [internal function]: App\Controller\UsersController->view('3')
+#17 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#19 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#22 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#23 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#24 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#26 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#27 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#28 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#29 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#31 {main}
+
+
+2017-05-11 06:50:49 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(77): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-11 06:50:51 Error: [InvalidArgumentException] Users is not associated with Bookmarks
+Request URL: /users/view/3
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(257): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\UsersTable), 'Bookmarks', Array, Array)
+#1 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(382): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\UsersTable))
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(353): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\UsersTable))
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(984): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\UsersTable), true)
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(935): Cake\ORM\Query->_transformQuery()
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(136): Cake\ORM\Query->sql()
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(221): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Query.php(190): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(957): Cake\Database\Query->execute()
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(905): Cake\ORM\Query->_all()
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(404): Cake\ORM\Query->all()
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(415): Cake\ORM\Query->first()
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Table.php(1224): Cake\ORM\Query->firstOrFail()
+#15 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(77): Cake\ORM\Table->get('3', Array)
+#16 [internal function]: App\Controller\UsersController->view('3')
+#17 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#19 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#22 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#23 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#24 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#26 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#27 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#28 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#29 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#31 {main}
+
+
+2017-05-11 06:51:54 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(75): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-11 06:52:16 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(75): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-11 06:55:28 Error: [InvalidArgumentException] Users is not associated with Bookmarks
+Request URL: /users/view/3
+Referer URL: http://localhost:8888/cake3/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(257): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\UsersTable), 'Bookmarks', Array, Array)
+#1 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(382): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\UsersTable))
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(353): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\UsersTable))
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(984): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\UsersTable), true)
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(935): Cake\ORM\Query->_transformQuery()
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(136): Cake\ORM\Query->sql()
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(221): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Database/Query.php(190): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(957): Cake\Database\Query->execute()
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(276): Cake\ORM\Query->_execute()
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Query.php(905): Cake\ORM\Query->_all()
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(404): Cake\ORM\Query->all()
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(415): Cake\ORM\Query->first()
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Table.php(1224): Cake\ORM\Query->firstOrFail()
+#15 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(77): Cake\ORM\Table->get('3', Array)
+#16 [internal function]: App\Controller\UsersController->view('3')
+#17 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#18 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#19 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#20 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#22 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#23 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#24 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#25 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#26 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#27 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#28 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#29 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#30 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#31 {main}
+
+
+2017-05-11 07:02:26 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(75): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-11 07:05:02 Error: Fatal Error (1): Class 'App\Controller\Configure' not found in [/Applications/MAMP/htdocs/cake3/src/Controller/AppController.php, line 86]
+Request URL: /cake3/users/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2017-05-11 07:05:05 Warning: Headers already sent in /Applications/MAMP/htdocs/cake3/src/Controller/AppController.php:86
+2017-05-11 07:05:05 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\Configure' not found
+Request URL: /cake3/users/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2017-05-11 07:28:29 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(75): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-11 07:28:31 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(75): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\UsersController->view()
+#2 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#16 {main}
+
+
+2017-05-11 07:28:39 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/%EF%BC%93
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/ORM/Table.php(1224): Cake\ORM\Query->firstOrFail()
+#1 /Applications/MAMP/htdocs/cake3/src/Controller/UsersController.php(75): Cake\ORM\Table->get('\xEF\xBC\x93')
+#2 [internal function]: App\Controller\UsersController->view('\xEF\xBC\x93')
+#3 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Controller/Controller.php(435): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(121): Cake\Controller\Controller->invokeAction()
+#5 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(95): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#6 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/BaseApplication.php(83): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#8 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(62): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#9 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#10 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#11 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#12 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(81): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#13 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response), Object(Cake\Http\Runner))
+#14 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#15 /Applications/MAMP/htdocs/cake3/vendor/cakephp/cakephp/src/Http/Server.php(90): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Zend\Diactoros\ServerRequest), Object(Zend\Diactoros\Response))
+#16 /Applications/MAMP/htdocs/cake3/webroot/index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+

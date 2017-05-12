@@ -1,0 +1,1057 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-05-11 06:26+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/BookmarksController.php:64;91
+msgid "The bookmark has been saved."
+msgstr ""
+
+#: Controller/BookmarksController.php:68;95
+msgid "The bookmark could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BookmarksController.php:115
+msgid "The bookmark has been deleted."
+msgstr ""
+
+#: Controller/BookmarksController.php:117
+msgid "The bookmark could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MFoodNutrientAmountsController.php:55;80
+msgid "The m food nutrient amount has been saved."
+msgstr ""
+
+#: Controller/MFoodNutrientAmountsController.php:59;84
+msgid "The m food nutrient amount could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MFoodNutrientAmountsController.php:102
+msgid "The m food nutrient amount has been deleted."
+msgstr ""
+
+#: Controller/MFoodNutrientAmountsController.php:104
+msgid "The m food nutrient amount could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MFoodsController.php:86;111
+msgid "The m food has been saved."
+msgstr ""
+
+#: Controller/MFoodsController.php:90;115
+msgid "The m food could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MFoodsController.php:133
+msgid "The m food has been deleted."
+msgstr ""
+
+#: Controller/MFoodsController.php:135
+msgid "The m food could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MMenuFoodListsController.php:55;80
+msgid "The m menu food list has been saved."
+msgstr ""
+
+#: Controller/MMenuFoodListsController.php:59;84
+msgid "The m menu food list could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MMenuFoodListsController.php:102
+msgid "The m menu food list has been deleted."
+msgstr ""
+
+#: Controller/MMenuFoodListsController.php:104
+msgid "The m menu food list could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MNormalMenusController.php:55;80
+msgid "The m normal menu has been saved."
+msgstr ""
+
+#: Controller/MNormalMenusController.php:59;84
+msgid "The m normal menu could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MNormalMenusController.php:102
+msgid "The m normal menu has been deleted."
+msgstr ""
+
+#: Controller/MNormalMenusController.php:104
+msgid "The m normal menu could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/MUsersController.php:59;84
+msgid "The m user has been saved."
+msgstr ""
+
+#: Controller/MUsersController.php:63;88
+msgid "The m user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MUsersController.php:106
+msgid "The m user has been deleted."
+msgstr ""
+
+#: Controller/MUsersController.php:108
+msgid "The m user could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:55;81
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/TagsController.php:59;85
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/TagsController.php:104
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/TagsController.php:106
+msgid "The tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:96;121
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:100;125
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:143
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:145
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Bookmarks/add.ctp:8
+#: Template/Bookmarks/edit.ctp:8
+#: Template/Bookmarks/index.ctp:8;26
+#: Template/Bookmarks/view.ctp:8;60
+#: Template/MFoodNutrientAmounts/add.ctp:8
+#: Template/MFoodNutrientAmounts/edit.ctp:8
+#: Template/MFoodNutrientAmounts/index.ctp:8;87
+#: Template/MFoodNutrientAmounts/view.ctp:8
+#: Template/MFoods/add.ctp:8
+#: Template/MFoods/edit.ctp:8
+#: Template/MFoods/index.ctp:8;33
+#: Template/MFoods/view.ctp:8
+#: Template/MMenuFoodLists/add.ctp:8
+#: Template/MMenuFoodLists/edit.ctp:8
+#: Template/MMenuFoodLists/index.ctp:8;26
+#: Template/MMenuFoodLists/view.ctp:8
+#: Template/MNormalMenus/add.ctp:8
+#: Template/MNormalMenus/edit.ctp:8
+#: Template/MNormalMenus/index.ctp:8;23
+#: Template/MNormalMenus/view.ctp:8
+#: Template/MUsers/add.ctp:8
+#: Template/MUsers/edit.ctp:8
+#: Template/MUsers/index.ctp:8;23
+#: Template/MUsers/view.ctp:8
+#: Template/Tags/add.ctp:8
+#: Template/Tags/edit.ctp:8
+#: Template/Tags/index.ctp:8;23
+#: Template/Tags/view.ctp:8;49
+#: Template/Users/add.ctp:8
+#: Template/Users/edit.ctp:8
+#: Template/Users/index.ctp:8;21
+#: Template/Users/view.ctp:8
+msgid "Actions"
+msgstr "Actions"
+
+#: Template/Bookmarks/add.ctp:9
+#: Template/Bookmarks/edit.ctp:15
+#: Template/Bookmarks/view.ctp:11
+#: Template/Tags/add.ctp:10
+#: Template/Tags/edit.ctp:16
+#: Template/Tags/index.ctp:10
+#: Template/Tags/view.ctp:13
+msgid "List Bookmarks"
+msgstr ""
+
+#: Template/Bookmarks/add.ctp:10
+#: Template/Bookmarks/edit.ctp:16
+#: Template/Bookmarks/index.ctp:10
+#: Template/Bookmarks/view.ctp:13
+#: Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:15
+#: Template/Users/view.ctp:11
+msgid "List Users"
+msgstr "List Users"
+
+#: Template/Bookmarks/add.ctp:11
+#: Template/Bookmarks/edit.ctp:17
+#: Template/Bookmarks/index.ctp:11
+#: Template/Bookmarks/view.ctp:14
+#: Template/Users/index.ctp:9
+#: Template/Users/view.ctp:12
+msgid "New User"
+msgstr "New User"
+
+#: Template/Bookmarks/add.ctp:12
+#: Template/Bookmarks/edit.ctp:18
+#: Template/Bookmarks/index.ctp:12
+#: Template/Bookmarks/view.ctp:15
+#: Template/Tags/add.ctp:9
+#: Template/Tags/edit.ctp:15
+#: Template/Tags/view.ctp:11
+msgid "List Tags"
+msgstr ""
+
+#: Template/Bookmarks/add.ctp:13
+#: Template/Bookmarks/edit.ctp:19
+#: Template/Bookmarks/index.ctp:13
+#: Template/Bookmarks/view.ctp:16
+#: Template/Tags/index.ctp:9
+#: Template/Tags/view.ctp:12
+msgid "New Tag"
+msgstr ""
+
+#: Template/Bookmarks/add.ctp:19
+msgid "Add Bookmark"
+msgstr ""
+
+#: Template/Bookmarks/add.ctp:28
+#: Template/Bookmarks/edit.ctp:34
+#: Template/MFoodNutrientAmounts/add.ctp:88
+#: Template/MFoodNutrientAmounts/edit.ctp:94
+#: Template/MFoods/add.ctp:34
+#: Template/MFoods/edit.ctp:40
+#: Template/MMenuFoodLists/add.ctp:27
+#: Template/MMenuFoodLists/edit.ctp:33
+#: Template/MNormalMenus/add.ctp:26
+#: Template/MNormalMenus/edit.ctp:32
+#: Template/MUsers/add.ctp:28
+#: Template/MUsers/edit.ctp:34
+#: Template/Tags/add.ctp:23
+#: Template/Tags/edit.ctp:29
+#: Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:30
+msgid "Submit"
+msgstr "Submit"
+
+#: Template/Bookmarks/edit.ctp:10
+#: Template/Bookmarks/index.ctp:40
+#: Template/Bookmarks/view.ctp:71
+#: Template/MFoodNutrientAmounts/edit.ctp:10
+#: Template/MFoodNutrientAmounts/index.ctp:166
+#: Template/MFoods/edit.ctp:10
+#: Template/MFoods/index.ctp:58
+#: Template/MMenuFoodLists/edit.ctp:10
+#: Template/MMenuFoodLists/index.ctp:44
+#: Template/MNormalMenus/edit.ctp:10
+#: Template/MNormalMenus/index.ctp:40
+#: Template/MUsers/edit.ctp:10
+#: Template/Tags/edit.ctp:10
+#: Template/Tags/index.ctp:36
+#: Template/Tags/view.ctp:63
+#: Template/Users/edit.ctp:10
+#: Template/Users/index.ctp:34
+msgid "Delete"
+msgstr "Delete"
+
+#: Template/Bookmarks/edit.ctp:12
+#: Template/Bookmarks/index.ctp:40
+#: Template/Bookmarks/view.ctp:10;71
+#: Template/MFoodNutrientAmounts/edit.ctp:12
+#: Template/MFoodNutrientAmounts/index.ctp:166
+#: Template/MFoodNutrientAmounts/view.ctp:10
+#: Template/MFoods/edit.ctp:12
+#: Template/MFoods/index.ctp:58;72
+#: Template/MFoods/view.ctp:10
+#: Template/MMenuFoodLists/edit.ctp:12
+#: Template/MMenuFoodLists/index.ctp:44
+#: Template/MMenuFoodLists/view.ctp:10
+#: Template/MNormalMenus/edit.ctp:12
+#: Template/MNormalMenus/index.ctp:40
+#: Template/MNormalMenus/view.ctp:10
+#: Template/MUsers/edit.ctp:12
+#: Template/MUsers/index.ctp:38
+#: Template/MUsers/view.ctp:10
+#: Template/Tags/edit.ctp:12
+#: Template/Tags/index.ctp:36
+#: Template/Tags/view.ctp:10;63
+#: Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:34
+#: Template/Users/view.ctp:10
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Bookmarks/edit.ctp:25
+#: Template/Bookmarks/view.ctp:9
+msgid "Edit Bookmark"
+msgstr ""
+
+#: Template/Bookmarks/index.ctp:9
+#: Template/Bookmarks/view.ctp:12
+#: Template/Tags/add.ctp:11
+#: Template/Tags/edit.ctp:17
+#: Template/Tags/index.ctp:11
+#: Template/Tags/view.ctp:14
+msgid "New Bookmark"
+msgstr ""
+
+#: Template/Bookmarks/index.ctp:17
+msgid "Bookmarks"
+msgstr ""
+
+#: Template/Bookmarks/index.ctp:38
+#: Template/Bookmarks/view.ctp:69
+#: Template/MFoodNutrientAmounts/index.ctp:164
+#: Template/MFoods/index.ctp:56
+#: Template/MMenuFoodLists/index.ctp:42
+#: Template/MNormalMenus/index.ctp:38
+#: Template/Tags/index.ctp:34
+#: Template/Tags/view.ctp:61
+#: Template/Users/index.ctp:32
+msgid "View"
+msgstr "View"
+
+#: Template/Bookmarks/index.ctp:39
+#: Template/Bookmarks/view.ctp:70
+#: Template/MFoodNutrientAmounts/index.ctp:165
+#: Template/MFoods/index.ctp:57
+#: Template/MMenuFoodLists/index.ctp:43
+#: Template/MNormalMenus/index.ctp:39
+#: Template/Tags/index.ctp:35
+#: Template/Tags/view.ctp:62
+#: Template/Users/index.ctp:33
+msgid "Edit"
+msgstr "Edit"
+
+#: Template/Bookmarks/index.ctp:48
+#: Template/MFoodNutrientAmounts/index.ctp:174
+#: Template/MFoods/index.ctp:80
+#: Template/MMenuFoodLists/index.ctp:52
+#: Template/MNormalMenus/index.ctp:48
+#: Template/MUsers/index.ctp:46
+#: Template/Tags/index.ctp:44
+#: Template/Users/index.ctp:42
+msgid "first"
+msgstr "first"
+
+#: Template/Bookmarks/index.ctp:49
+#: Template/MFoodNutrientAmounts/index.ctp:175
+#: Template/MFoods/index.ctp:81
+#: Template/MMenuFoodLists/index.ctp:53
+#: Template/MNormalMenus/index.ctp:49
+#: Template/MUsers/index.ctp:47
+#: Template/Tags/index.ctp:45
+#: Template/Users/index.ctp:43
+msgid "previous"
+msgstr "previous"
+
+#: Template/Bookmarks/index.ctp:51
+#: Template/MFoodNutrientAmounts/index.ctp:177
+#: Template/MFoods/index.ctp:83
+#: Template/MMenuFoodLists/index.ctp:55
+#: Template/MNormalMenus/index.ctp:51
+#: Template/MUsers/index.ctp:49
+#: Template/Tags/index.ctp:47
+#: Template/Users/index.ctp:45
+msgid "next"
+msgstr "next"
+
+#: Template/Bookmarks/index.ctp:52
+#: Template/MFoodNutrientAmounts/index.ctp:178
+#: Template/MFoods/index.ctp:84
+#: Template/MMenuFoodLists/index.ctp:56
+#: Template/MNormalMenus/index.ctp:52
+#: Template/MUsers/index.ctp:50
+#: Template/Tags/index.ctp:48
+#: Template/Users/index.ctp:46
+msgid "last"
+msgstr "last"
+
+#: Template/Bookmarks/index.ctp:54
+#: Template/MFoodNutrientAmounts/index.ctp:180
+#: Template/MFoods/index.ctp:86
+#: Template/MMenuFoodLists/index.ctp:58
+#: Template/MNormalMenus/index.ctp:54
+#: Template/MUsers/index.ctp:52
+#: Template/Tags/index.ctp:50
+#: Template/Users/index.ctp:48
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/Bookmarks/view.ctp:10
+msgid "Delete Bookmark"
+msgstr ""
+
+#: Template/Bookmarks/view.ctp:23
+msgid "User"
+msgstr "User"
+
+#: Template/Bookmarks/view.ctp:27;57
+#: Template/Tags/view.ctp:21;44
+msgid "Title"
+msgstr "Title"
+
+#: Template/Bookmarks/view.ctp:31;56
+#: Template/MFoods/view.ctp:67
+#: Template/MUsers/view.ctp:19
+#: Template/Tags/view.ctp:25;42
+#: Template/Users/view.ctp:31
+msgid "Id"
+msgstr "Id"
+
+#: Template/Bookmarks/view.ctp:35;58
+#: Template/Tags/view.ctp:29;47
+msgid "Created"
+msgstr "Created"
+
+#: Template/Bookmarks/view.ctp:39;59
+#: Template/Tags/view.ctp:33;48
+msgid "Updated"
+msgstr "Updated"
+
+#: Template/Bookmarks/view.ctp:44
+#: Template/Tags/view.ctp:45
+msgid "Description"
+msgstr ""
+
+#: Template/Bookmarks/view.ctp:48
+#: Template/Tags/view.ctp:46
+msgid "Url"
+msgstr ""
+
+#: Template/Bookmarks/view.ctp:52
+msgid "Related Tags"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/add.ctp:9
+#: Template/MFoodNutrientAmounts/edit.ctp:15
+#: Template/MFoodNutrientAmounts/view.ctp:11
+msgid "List M Food Nutrient Amounts"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/add.ctp:15
+msgid "Add M Food Nutrient Amount"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/edit.ctp:21
+#: Template/MFoodNutrientAmounts/view.ctp:9
+msgid "Edit M Food Nutrient Amount"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/index.ctp:9
+#: Template/MFoodNutrientAmounts/view.ctp:12
+msgid "New M Food Nutrient Amount"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/index.ctp:13
+msgid "M Food Nutrient Amounts"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:10
+msgid "Delete M Food Nutrient Amount"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:19
+#: Template/MFoods/view.ctp:31
+#: Template/MMenuFoodLists/view.ctp:35
+msgid "FoodId"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:23
+#: Template/MFoods/view.ctp:59
+#: Template/MMenuFoodLists/view.ctp:19
+#: Template/MNormalMenus/view.ctp:23
+#: Template/MUsers/view.ctp:35
+msgid "RegistUserId"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:27
+#: Template/MFoods/view.ctp:63
+#: Template/MMenuFoodLists/view.ctp:23
+#: Template/MNormalMenus/view.ctp:27
+#: Template/MUsers/view.ctp:39
+msgid "UpdateUserId"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:31
+msgid "Refuse"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:35
+msgid "EnercKcal"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:39
+msgid "Enerc"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:43
+msgid "Water"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:47
+msgid "Protein"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:51
+msgid "Protcaa"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:55
+msgid "Fat"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:59
+msgid "Fatnlea"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:63
+msgid "Fasat"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:67
+msgid "Fams"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:71
+msgid "Fapu"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:75
+msgid "Chole"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:79
+msgid "Carbohyd"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:83
+msgid "Choavlm"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:87
+msgid "Fibsol"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:91
+msgid "Fibins"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:95
+msgid "Fibtg"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:99
+msgid "Ash"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:103
+msgid "MineralNa"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:107
+msgid "MineralK"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:111
+msgid "MineralCa"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:115
+msgid "MineralMg"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:119
+msgid "MineralP"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:123
+msgid "MineralFe"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:127
+msgid "MineralZn"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:131
+msgid "MineralCu"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:135
+msgid "MineralMn"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:139
+msgid "MineralId"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:143
+msgid "MineralSe"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:147
+msgid "MineralCr"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:151
+msgid "MineralMo"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:155
+msgid "Retol"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:159
+msgid "Carta"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:163
+msgid "Cartb"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:167
+msgid "Crypxb"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:171
+msgid "Cartbeq"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:175
+msgid "VitaRae"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:179
+msgid "Vitd"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:183
+msgid "Tocpha"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:187
+msgid "Tocphb"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:191
+msgid "Tocphg"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:195
+msgid "Tocphd"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:199
+msgid "Vitk"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:203
+msgid "Thiahcl"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:207
+msgid "Ribf"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:211
+msgid "Nia"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:215
+msgid "Vitb6A"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:219
+msgid "Vitb12"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:223
+msgid "Fol"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:227
+msgid "Pantac"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:231
+msgid "Biot"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:235
+msgid "Vitc"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:239
+msgid "NaclEq"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:243
+msgid "Alc"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:247
+msgid "Nitra"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:251
+msgid "Thebrn"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:255
+msgid "Caffn"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:259
+msgid "Tan"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:263
+msgid "Polyphent"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:267
+msgid "Aceac"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:271
+msgid "Oil"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:275
+msgid "Oa"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:279
+msgid "Fapun3"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:283
+msgid "Fapun6"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:287
+msgid "WeightRate"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:291
+#: Template/MFoods/view.ctp:75
+#: Template/MMenuFoodLists/view.ctp:47
+#: Template/MNormalMenus/view.ctp:43
+#: Template/MUsers/view.ctp:47
+#: Template/Users/view.ctp:35
+msgid "RegistDate"
+msgstr ""
+
+#: Template/MFoodNutrientAmounts/view.ctp:295
+#: Template/MFoods/view.ctp:79
+#: Template/MMenuFoodLists/view.ctp:51
+#: Template/MNormalMenus/view.ctp:47
+#: Template/MUsers/view.ctp:51
+#: Template/Users/view.ctp:39
+msgid "UpdateDate"
+msgstr ""
+
+#: Template/MFoods/add.ctp:9
+#: Template/MFoods/edit.ctp:15
+#: Template/MFoods/view.ctp:11
+msgid "List M Foods"
+msgstr ""
+
+#: Template/MFoods/add.ctp:15
+msgid "Add M Food"
+msgstr ""
+
+#: Template/MFoods/edit.ctp:21
+#: Template/MFoods/view.ctp:9
+msgid "Edit M Food"
+msgstr ""
+
+#: Template/MFoods/index.ctp:9
+#: Template/MFoods/view.ctp:12
+msgid "New M Food"
+msgstr ""
+
+#: Template/MFoods/index.ctp:13
+msgid "M Foods"
+msgstr ""
+
+#: Template/MFoods/index.ctp:70
+#: Template/MUsers/index.ctp:36
+msgid "表示"
+msgstr ""
+
+#: Template/MFoods/index.ctp:71
+#: Template/MUsers/index.ctp:37
+msgid "編集"
+msgstr ""
+
+#: Template/MFoods/index.ctp:72
+#: Template/MUsers/index.ctp:38
+msgid "削除"
+msgstr ""
+
+#: Template/MFoods/view.ctp:10
+msgid "Delete M Food"
+msgstr ""
+
+#: Template/MFoods/view.ctp:19
+msgid "FoodNameKana"
+msgstr ""
+
+#: Template/MFoods/view.ctp:23
+msgid "FoodNameDisplay"
+msgstr ""
+
+#: Template/MFoods/view.ctp:27
+msgid "FoodNameOther"
+msgstr ""
+
+#: Template/MFoods/view.ctp:35
+msgid "FoodName"
+msgstr ""
+
+#: Template/MFoods/view.ctp:39
+msgid "SubClass"
+msgstr ""
+
+#: Template/MFoods/view.ctp:43
+msgid "KindClass"
+msgstr ""
+
+#: Template/MFoods/view.ctp:47
+msgid "MajorClass"
+msgstr ""
+
+#: Template/MFoods/view.ctp:51
+msgid "MiddleClass"
+msgstr ""
+
+#: Template/MFoods/view.ctp:55
+msgid "SmallClass"
+msgstr ""
+
+#: Template/MFoods/view.ctp:71
+msgid "MajorClassId"
+msgstr ""
+
+#: Template/MMenuFoodLists/add.ctp:9
+#: Template/MMenuFoodLists/edit.ctp:15
+#: Template/MMenuFoodLists/view.ctp:11
+msgid "List M Menu Food Lists"
+msgstr ""
+
+#: Template/MMenuFoodLists/add.ctp:15
+msgid "Add M Menu Food List"
+msgstr ""
+
+#: Template/MMenuFoodLists/edit.ctp:21
+#: Template/MMenuFoodLists/view.ctp:9
+msgid "Edit M Menu Food List"
+msgstr ""
+
+#: Template/MMenuFoodLists/index.ctp:9
+#: Template/MMenuFoodLists/view.ctp:12
+msgid "New M Menu Food List"
+msgstr ""
+
+#: Template/MMenuFoodLists/index.ctp:13
+msgid "M Menu Food Lists"
+msgstr ""
+
+#: Template/MMenuFoodLists/view.ctp:10
+msgid "Delete M Menu Food List"
+msgstr ""
+
+#: Template/MMenuFoodLists/view.ctp:27
+msgid "MenuFoodListId"
+msgstr ""
+
+#: Template/MMenuFoodLists/view.ctp:31
+#: Template/MNormalMenus/view.ctp:31
+msgid "MenuId"
+msgstr ""
+
+#: Template/MMenuFoodLists/view.ctp:39
+msgid "Number"
+msgstr ""
+
+#: Template/MMenuFoodLists/view.ctp:43
+msgid "UnitId"
+msgstr ""
+
+#: Template/MNormalMenus/add.ctp:9
+#: Template/MNormalMenus/edit.ctp:15
+#: Template/MNormalMenus/view.ctp:11
+msgid "List M Normal Menus"
+msgstr ""
+
+#: Template/MNormalMenus/add.ctp:15
+msgid "Add M Normal Menu"
+msgstr ""
+
+#: Template/MNormalMenus/edit.ctp:21
+#: Template/MNormalMenus/view.ctp:9
+msgid "Edit M Normal Menu"
+msgstr ""
+
+#: Template/MNormalMenus/index.ctp:9
+#: Template/MNormalMenus/view.ctp:12
+msgid "New M Normal Menu"
+msgstr ""
+
+#: Template/MNormalMenus/index.ctp:13
+msgid "M Normal Menus"
+msgstr ""
+
+#: Template/MNormalMenus/view.ctp:10
+msgid "Delete M Normal Menu"
+msgstr ""
+
+#: Template/MNormalMenus/view.ctp:19
+msgid "MenuName"
+msgstr ""
+
+#: Template/MNormalMenus/view.ctp:35
+msgid "MenuType"
+msgstr ""
+
+#: Template/MNormalMenus/view.ctp:39
+msgid "MenuGroupId"
+msgstr ""
+
+#: Template/MUsers/add.ctp:9
+#: Template/MUsers/edit.ctp:15
+#: Template/MUsers/view.ctp:11
+msgid "List M Users"
+msgstr ""
+
+#: Template/MUsers/add.ctp:15
+msgid "Add M User"
+msgstr ""
+
+#: Template/MUsers/edit.ctp:21
+#: Template/MUsers/view.ctp:9
+msgid "Edit M User"
+msgstr ""
+
+#: Template/MUsers/index.ctp:9
+#: Template/MUsers/view.ctp:12
+msgid "New M User"
+msgstr ""
+
+#: Template/MUsers/index.ctp:13
+msgid "ユーザマスタ"
+msgstr ""
+
+#: Template/MUsers/view.ctp:10
+msgid "Delete M User"
+msgstr ""
+
+#: Template/MUsers/view.ctp:23
+msgid "Name"
+msgstr ""
+
+#: Template/MUsers/view.ctp:27
+#: Template/Users/view.ctp:23
+msgid "Password"
+msgstr ""
+
+#: Template/MUsers/view.ctp:31
+msgid "Token"
+msgstr ""
+
+#: Template/MUsers/view.ctp:43
+msgid "UserId"
+msgstr ""
+
+#: Template/MUsers/view.ctp:55
+msgid "DeleteFlg"
+msgstr ""
+
+#: Template/MUsers/view.ctp:56
+msgid "Yes"
+msgstr ""
+
+#: Template/MUsers/view.ctp:56
+msgid "No"
+msgstr ""
+
+#: Template/Tags/add.ctp:17
+msgid "Add Tag"
+msgstr ""
+
+#: Template/Tags/edit.ctp:23
+#: Template/Tags/view.ctp:9
+msgid "Edit Tag"
+msgstr ""
+
+#: Template/Tags/index.ctp:15
+msgid "Tags"
+msgstr ""
+
+#: Template/Tags/view.ctp:10
+msgid "Delete Tag"
+msgstr ""
+
+#: Template/Tags/view.ctp:38
+msgid "Related Bookmarks"
+msgstr ""
+
+#: Template/Tags/view.ctp:43
+msgid "User Id"
+msgstr ""
+
+#: Template/Users/add.ctp:15
+msgid "Add User"
+msgstr "Add User"
+
+#: Template/Users/edit.ctp:21
+#: Template/Users/view.ctp:9
+msgid "Edit User"
+msgstr "Edit User"
+
+#: Template/Users/index.ctp:13
+msgid "Users"
+msgstr "Users"
+
+#: Template/Users/login.ctp:9
+msgid "送信"
+msgstr "送信"
+
+#: Template/Users/view.ctp:10
+msgid "Delete User"
+msgstr "Delete User"
+
+#: Template/Users/view.ctp:19
+msgid "Username"
+msgstr "Username"
+
+#: Template/Users/view.ctp:27
+msgid "Role"
+msgstr "Role"
+
+#: Template/Users/view.ctp:28
+msgid "Popular"
+msgstr "Popular Articles"
